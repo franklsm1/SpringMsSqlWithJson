@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    password: ${data.mssql.admin.password}
+    url: jdbc:sqlserver://${data.mssql.server}:1433;database=${data.mssql.database};sendStringParametersAsUnicode=false
+    username: ${data.mssql.admin.user}
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
